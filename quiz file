@@ -1,0 +1,30 @@
+var correctanswer1 = 'no';
+var correctanswer2 = 'yes';
+var correctanswer3 = 'yes';
+var correctanswer4 = 'no';
+var correctanswer5  = 'no';
+
+var rightAnswers =0;
+
+var question1 = prompt('Is the world flat?')
+if (question1 === correctanswer1){ rightAnswers += 1};
+
+var question2 = prompt('Did we went to the moon?') 
+if (question2 === correctanswer2){ rightAnswers += 1};
+
+var question3 = prompt('Is north korea a dictatorship?') 
+if (question3 === correctanswer3){ rightAnswers += 1};
+
+var question4 = prompt('Did Albert Einstein invented the light bulb?')
+if (question4 === correctanswer4){ rightAnswers += 1};
+
+var question5 = prompt('Does the Soviet Union still exists?')
+if (question5 === correctanswer5){ rightAnswers += 1};
+
+var yourScore = rightAnswers;
+
+document.write('You got ' + rightAnswers + ' correct answers');
+ 
+ if (rightAnswers === 5){alert('you got the gold medal XD') }else if (rightAnswers === 4 || rightAnswers ===3 ){alert('you got the silver medal XD')}else if (rightAnswers === 2 || rightAnswers === 1){alert('you got the bronze medal XD')} else if (rightAnswers === 0){alert('you got the dumbass medal XD')}
+
+ 
