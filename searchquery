@@ -10,7 +10,7 @@ function print(message) {
 
  while (true) {
    search = prompt(" Search the item you want in our list , to see al the prodcuts type'list'. If you want to exit the program type 'quit'");
-                   
+   search = search.toLowerCase();                
  if ( search === 'quit') {break;}
  
  else if (search === 'list'){
