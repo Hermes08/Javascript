@@ -1,0 +1,34 @@
+// first I will create a 2d array with the question and answer in the each internal array.
+
+var questions = [ ["What language your are studying right now?", 100 ] , ['In which place you are studying?' , 200] , ['How much Treehouse costs per month?' , 200 ]]
+
+var question;
+var answer;
+var response;
+var correctAnswers = 0;
+var html;
+
+// this function prints a variable you choose.
+
+function print(message) {
+  document.write(message);
+  
+}
+
+
+for ( var i= 0; i < questions.length ; i += 1) {
+  
+  question = questions[i][0];
+  answer = questions[i][1];
+  response= parseInt(prompt(question));
+  
+  if ( response === answer) { correctAnswers+= 1}
+  
+ 
+ 
+}
+
+html = 'You got ' + correctAnswers + ' question(s)right'
+
+print (html)
+
