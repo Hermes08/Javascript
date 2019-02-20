@@ -1,0 +1,31 @@
+var html2;
+var quotes = [ 
+  { quote : 'Everything will be tokenized and connected by a blockchain one day.' , source: 'Fred Ehrsam '} ,              
+  { quote : 'Blockchain technology isn\'t just a more efficient way to settle securities. It will fundamentally change market structures, and maybe even the architecture of the Internet itself.' ,  source : 'Abigail Johnson' }, 
+  { quote : 'Bitcoin is a technological tour de force.' , source : ' Bill Gates ' } ,
+  { quote : 'Lento pero seguro.' , source : ' David Aguirre ' } 
+                                                                                      ]
+  
+ var array ;
+function getRandomQuote (array) {
+  
+  var randomNum = quotes[Math.floor((Math.random()*quotes.length))]
+  return randomNum
+
+ }
+
+  function printQuote(message){
+   getRandomQuote(array)
+  var newQuote = getRandomQuote(array);
+
+var html2 = '<h1 class ="quote">' + newQuote.quote + '</h1>';
+   document.getElementById('quote-box').innerHTML = html2;
+  return html2}
+
+
+
+
+
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+
+
