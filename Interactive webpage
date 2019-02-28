@@ -1,0 +1,36 @@
+const button2 = document.querySelector("#toggleList");
+const divKey = document.querySelector(".hiddenList");
+
+const descriptionInput= document.querySelector('input.description');
+const descriptionP = document.querySelector('p.description');
+const descriptionButton = document.querySelector('button.description');
+
+const addItemInput = document.querySelector('input.addItemInput');
+const addItemButton = document.querySelector('button.addItemButton');
+const removeItemButton = document.querySelector('button.remove');
+
+
+
+divKey.addEventListener('mouseover', (event) =>{
+                        if ( event.target.tagName == 'LI'){
+event.target.textContent = event.target.textContent.toUpperCase() ;}})
+                           
+divKey.addEventListener('mouseout', (event) =>{if ( event.target.tagName === 'LI')
+ event.target.textContent = event.target.textContent.toLowerCase()} )
+                           
+   
+descriptionButton.addEventListener('click', () => {
+                        descriptionP.textContent= descriptionInput.value + ':' ;
+                                   descriptionInput.value = ''});
+
+
+button2.addEventListener('click' , () => {
+                         
+if (divKey.style.display == 'none') { 
+  button2.textContent= 'Hide shit';
+  divKey.style.display = 'block'; }
+  
+  else {
+button2.textContent= 'show list'  
+  
+ divKey.style.display = 'none';}}) ;
